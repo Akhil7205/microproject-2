@@ -195,17 +195,7 @@ span {
   bottom: 0px;
 }
 
-@media screen and(min-width:400px) {
-  /* .links,
-  ul,
-  li,
-  a {
-    display: none;
-  } */
-  html {
-    color: red;
-  }
-}
+
 @media screen and (max-width: 800px) {
   .logo {
     font-size: 35px;
