@@ -82,12 +82,13 @@ main {
   align-content: center;
   margin-top: 10em;
   justify-content: space-around;
-  height: 60vh;
+  height: fit-content;
   gap: 2em;
 }
 .textbox {
   height: 600px;
   margin: 30px;
+  /* min-width: 200px; */
   color: var(--black);
   box-shadow: 3px 5px 27px 0px rgba(0, 0, 0, 0.25) inset;
   border-radius: 20px;
@@ -190,14 +191,66 @@ span {
 .help-icon {
   position: fixed;
   right: 5em;
+  width: 220px;
   bottom: 0px;
 }
 
-@media screen and(width:00px) {
-  .links,
+@media screen and(min-width:400px) {
+  /* .links,
   ul,
   li,
   a {
     display: none;
+  } */
+  html {
+    color: red;
   }
+}
+@media screen and (max-width: 800px) {
+  .logo {
+    font-size: 35px;
+  }
+  ul {
+    display: none;
+  }
+  .stickyimg {
+    right: -25px;
+    width: 5em;
+  }
+  .container1,
+  main {
+    margin: 10em 0px;
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+  }
+  p {
+    font-size: x-large;
+  }
+  .container2,
+  .container3 {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    gap: 2.5em;
+    margin: 1.4em;
+    align-items: center;
+    margin-bottom: 10em;
+    /* transform:scale(.8); */
+  }
+  .container2 > div {
+    width: 80%;
+    padding: 10px;
+  }
+  .white-box {
+    font-size: larger;
+    padding: 2em;
+    width: auto;
+  }
+
+  .help-icon>img {
+    float: right;
+    bottom: 20px;
+    width: 120px;
+  } 
 }
