@@ -42,7 +42,6 @@ a {
   font-family: var(--font-family);
   font-size: xx-large;
   padding: 0em 0.5em;
-  /* display: none; */
 }
 
 .search {
@@ -88,7 +87,6 @@ main {
 .textbox {
   height: 600px;
   margin: 30px;
-  /* min-width: 200px; */
   color: var(--black);
   box-shadow: 3px 5px 27px 0px rgba(0, 0, 0, 0.25) inset;
   border-radius: 20px;
@@ -111,7 +109,6 @@ main {
   border-radius: 11px;
   box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.4);
   padding: 20px;
-  /* font-size: x-large; */
   font-size: xx-large;
   color: white;
   line-height: 1.6em;
