@@ -11,18 +11,20 @@
   --black: black;
   --navyblue: rgba(4, 40, 90, 1);
 }
-
+header{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 .logo {
   font-family: "Delius Unicase", cursive;
-  font-size: xxx-large;
+  font-size: 2.5vw;
 }
-header {
-  position: fixed;
-  top: 0px;
-}
+
 .navbar {
-  width: 100vw;
-  padding: 1em;
+  width: 100%;
+  height: 60px;
+  padding: 1vw 4vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -35,13 +37,14 @@ li,
 a {
   color: var(--text-color);
   display: flex;
-  gap: 20px;
+  gap: 0.5vw;
   align-items: center;
   text-decoration: none;
   list-style-type: none;
   font-family: var(--font-family);
-  font-size: xx-large;
-  padding: 0em 0.5em;
+  font-size: 1.3vw;
+  font-weight: 500;
+  padding: 0em 0.5vw;
 }
 
 .search {
@@ -50,20 +53,22 @@ a {
 }
 
 .searchinput {
-  font-size: 1em;
-  width: 8em;
+  font-size: 1.2vw;
+  width: 8vw;
   border: none;
   border-radius: 50px;
-  padding: 10px;
+  padding: 0.51vw;
 }
 .hamburger {
-  width: 5em;
-  height: 4em;
-  padding: 0.7em;
+  width: 5vw;
+  height: 4vw;
+  padding: 1.2vw;
 }
 
 main {
-  margin: 7em;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .stick {
   position: sticky;
@@ -77,21 +82,29 @@ main {
 }
 
 .container1 {
+  width: 100%;
+  height: 100%;
+  margin: 5vw ;
   display: flex;
   align-content: center;
-  margin-top: 10em;
   justify-content: space-around;
-  height: fit-content;
-  gap: 2em;
+  /* gap */
+
+}
+.container1 img{
+  width: 27vw;
+  height: 55vh;
+  margin: 1vw;
 }
 .textbox {
-  height: 600px;
-  margin: 30px;
+  width: 65vw;
+  max-height: 49vh;
+  margin: 2.3vw;
   color: var(--black);
   box-shadow: 3px 5px 27px 0px rgba(0, 0, 0, 0.25) inset;
   border-radius: 20px;
-  padding: 2em;
-  font-size: 2em;
+  padding: 2vw;
+  font-size: 1.5vw;
   background: linear-gradient(0deg, #e5d8ff, #e5d8ff),
     linear-gradient(0deg, #ffffff, #ffffff);
   color: rgba(111, 115, 115, 1);
@@ -193,7 +206,7 @@ span {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .logo {
     font-size: 35px;
   }
