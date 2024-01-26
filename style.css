@@ -11,10 +11,11 @@
   --black: black;
   --navyblue: rgba(4, 40, 90, 1);
 }
-header{
+header {
   width: 100%;
-  height: 100%;
-  position: relative;
+  height: 60px;
+  position: fixed;
+  top: 0px;
 }
 .logo {
   font-family: "Delius Unicase", cursive;
@@ -66,38 +67,36 @@ a {
 }
 
 main {
-  position: relative;
   width: 100%;
   height: 100%;
 }
 .stick {
   position: sticky;
-  top: 6em;
+  top: 2vh;
 }
 .stickyimg {
   position: absolute;
-  right: -6em;
+  right: 0em;
   top: 7em;
+  width: 6vw;
   padding: 0.5em;
 }
 
 .container1 {
-  width: 100%;
+  margin: 100px 50px 0px;
   height: 100%;
-  margin: 5vw ;
   display: flex;
   align-content: center;
   justify-content: space-around;
   /* gap */
-
 }
-.container1 img{
+.container1 > img {
   width: 27vw;
   height: 55vh;
   margin: 1vw;
 }
 .textbox {
-  width: 65vw;
+  width: 60vw;
   max-height: 49vh;
   margin: 2.3vw;
   color: var(--black);
@@ -112,19 +111,19 @@ main {
 
 .container2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
-  margin: 7em 0em;
+  margin: 80px 50px 100px;
 }
 .container2 > div {
-  width: 337px;
-  height: 145.48px;
-  border-radius: 11px;
+  width: 20vw;
+  height: 16vh;
+  border-radius: 20px;
   box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  font-size: xx-large;
+  padding: 1.1vw;
+  font-size: 3vmin;
   color: white;
-  line-height: 1.6em;
+  line-height: 1.8em;
 }
 .box1 {
   background-color: aqua;
@@ -140,11 +139,11 @@ main {
 }
 
 .container3 {
+  margin: 100px 60px 50px;
   background: rgba(72, 62, 255, 1);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: em;
   border-radius: 20px;
 }
 #c3box1 {
@@ -153,76 +152,96 @@ main {
   border: none;
   border: 4px solid rgba(188, 224, 246, 1);
 }
-.left-boxes {
-}
+
 .left-boxes > div {
-  padding: 1em 2em;
-  margin: 2em 3em;
+  padding: 2vw 3vw;
+  margin: 2.7vw 3vw;
   border: 4px solid white;
   border-radius: 20px;
   font-weight: bolder;
-  font-size: xx-large;
+  font-size: 1.7vw;
   color: var(--text-color);
   text-align: center;
 }
 
 .white-box {
   background: rgba(255, 255, 255, 1);
-  height: 100%;
-  width: 100%;
-  font-size: xx-large;
-  margin: 2em;
+  width: 70vw;
+  font-size: 1.4vw;
+  margin: 1vw;
   border-radius: 20px;
-  padding: 3em;
+  padding: 2vw 5vw;
   color: var(--navyblue);
+}
+.infobox {
+  padding: 2em 2em 0em;
 }
 
 h3 {
+  word-spacing: 1vw;
   margin: 10px -20px;
   font-size: 1.5em;
 }
 pre {
+  letter-spacing: 0.1vw;
   line-height: 2.3em;
 }
 span {
+  letter-spacing: 0.2vw;
   font-weight: bold;
+}
+.btn-div {
+  margin: 5.5vw;
 }
 .btn {
   background-color: var(--black);
   color: var(--text-color);
-  margin: 5em 1em 0em;
+  margin: 5em 3em 0em;
   border-radius: 9px;
-  font-size: x-large;
-  padding: 0.6em 1.2em;
+  font-size: 1.2vw;
+  padding: 0.8em 1.5em;
   float: right;
   bottom: 20px;
 }
 
-.help-icon {
+.help-icon > img {
   position: fixed;
-  right: 5em;
-  width: 220px;
+  right: 100px;
+  width: 8vw;
   bottom: 0px;
 }
-
 
 @media screen and (max-width: 600px) {
   .logo {
     font-size: 35px;
   }
+  .hamburger {
+    width: 10vw;
+    height: 8vw;
+    padding: 1.2vw;
+  }
   ul {
     display: none;
   }
   .stickyimg {
-    right: -25px;
-    width: 5em;
+    right: -6px;
+    width: 4em;
   }
-  .container1,
-  main {
-    margin: 10em 0px;
-    width: 95%;
-    height: auto;
+  .container1 {
+    margin: 5em 6.3vw;
     flex-direction: column;
+  }
+  .container1 > img {
+    width: auto;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+  .textbox {
+    width: auto;
+    height: 50vh;
+    padding: 25px;
   }
   p {
     font-size: x-large;
@@ -235,22 +254,31 @@ span {
     gap: 2.5em;
     margin: 1.4em;
     align-items: center;
-    margin-bottom: 10em;
+    margin-bottom: 5em;
+    padding: 4vw;
     /* transform:scale(.8); */
   }
   .container2 > div {
     width: 80%;
-    padding: 10px;
+    padding: 5vw;
+    font-size: 5vw;
   }
   .white-box {
-    font-size: larger;
-    padding: 2em;
+    font-size: 5.5vw;
+    padding: 1em;
     width: auto;
   }
-
-  .help-icon>img {
+  .info > pre {
+    line-height: 7vw;
+  }
+  .btn {
+    padding: 1em 2em;
+    font-size: 10px;
+  }
+  .help-icon > img {
     float: right;
     bottom: 20px;
-    width: 120px;
-  } 
+    right: 0px;
+    width: 100px;
+  }
 }
